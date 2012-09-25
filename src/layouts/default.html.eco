@@ -41,11 +41,43 @@
 
 
 	</header>
-	<div role="main">
-		<%- @content %>
+	<div id="container">
+
 	</div>
 	<footer>
-
+		<nav>
+			<ul class="main">
+				<li><a href="/about/index.html">About Us</a></li>
+				<li><a href="/our-titles/index.html">Our Titles</a></li>
+				<li><a href="/success-stories/index.html">Success Stories</a></li>
+				<li><a href="/testimonials/index.html">Testimonials</a></li>
+				<li><a href="book-a-shoot/index.html">Book A Shoot</a></li>
+				<li><a href="/portforios-marketing/index.html">Portfolios &amp; Marketing</a></li>
+				<li><a href="/internships/index.html">Internships</a></li>
+				<li><a href="/contact/index.html">Contact</a></li>
+			</ul>
+			<ul class="sub">
+				<li><a href="/cities-we-serve/index.html">Cities We Serce</a></li>
+				<li><a href="/articles/index.html">Articles</a></li>
+				<li><a href="/other-sites/index.html">Other Sites</a></li>
+				<li><a href="/privacy/index.html">Privacy Policy</a></li>
+				<li><a href="/terms/index.html">Terms &amp; Conditions</a></li>
+			</ul>
+			<ul class="social">
+				<li><a href=""><img src="images/footer/bbb.png" alt=""></a></li>
+				<li><a href=""><img src="images/footer/visa.png" alt=""></a></li>
+				<li><a href=""><img src="images/footer/mastercard.png" alt=""></a></li>
+				<li><a href=""><img src="images/footer/amexpress.png" alt=""></a></li>
+				<li><a href=""><img src="images/footer/dci.png" alt=""></a></li>
+				<li><a href=""><img src="images/footer/blog.png" alt=""></a></li>
+				<li><a href=""><img src="images/footer/twitter.png" alt=""></a></li>
+				<li><a href=""><img src="images/footer/facebook.png" alt=""></a></li>
+				<li><a href=""><img src="images/footer/google-plus.png" alt=""></a></li>
+				<li><a href=""><img src="images/footer/its-logo-footer.png" alt=""></a></li>
+				<li><a href=""><img src="images/footer/youtube.png" alt=""></a></li>
+			</ul>
+		</nav>
+		<p class="copyright">&copy; Empire West Studios</p>
 	</footer>
 
 
