@@ -25,56 +25,75 @@
 
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
 	<%- @getBlock('styles').add(["/style.css"]).toHTML() %>
-	<link href='http://fonts.googleapis.com/css?family=Rokkitt' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans|Rokkitt' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<header>
+
 		<div class="logo">
 			<a href="http://www.empireweststudios.com">
 				<img src="/images/logo.png." alt="Empire West Studios">
 			</a>
 		</div>
 
-		
+		<nav>
 
+			<ul class="mainNav">
+				<li>Photography</li>
+				<li><a href="model-and-talent.php">Model&amp;Talent</a></li>
+				<li><a href="fashion-and-beauty.php">Fashion&amp;Beauty</a></li>
+				<li><a href="/face-and-body-art.php">Face&amp;Body Art</a></li>
+				<li><a href="/headshots.php">Headshots</a></li>
+			</ul>
 
+			<ul class="subNav">
+				<li><a href="/great-photos-success.php">Great Photos = Success</a></li>
+				<li><a href="/nobody-does-it-better.php">Nobody Does It Better</a></li>
+				<li><a href="/montage.php">Montage</a></li>
+				<li><a href="/film-strips.php">Film Strips</a></li>
+				<li><a href="/twin-sets.php">Twin Sets</a></li>
+				<li><a href="/children.php">Children 5-12</a></li>
+				<li><a href="/teens.php">Teens</a></li>
+				<li><a href="/adults.php">Adults 20+</a></li>
+			</ul>
+
+		</nav>
 
 	</header>
 	<div id="container">
-
+		<%= @content %>
 	</div>
 	<footer>
 		<nav>
-			<ul class="main">
-				<li><a href="/about/index.html">About Us</a></li>
-				<li><a href="/our-titles/index.html">Our Titles</a></li>
-				<li><a href="/success-stories/index.html">Success Stories</a></li>
-				<li><a href="/testimonials/index.html">Testimonials</a></li>
-				<li><a href="book-a-shoot/index.html">Book A Shoot</a></li>
-				<li><a href="/portforios-marketing/index.html">Portfolios &amp; Marketing</a></li>
-				<li><a href="/internships/index.html">Internships</a></li>
-				<li><a href="/contact/index.html">Contact</a></li>
+			<ul class="mainNav">
+				<li><a href="/about.php">About Us</a></li>
+				<li><a href="/our-titles.php">Our Titles</a></li>
+				<li><a href="/success-stories.php">Success Stories</a></li>
+				<li><a href="/testimonials.php">Testimonials</a></li>
+				<li><a href="book-a-shoot.php">Book A Shoot</a></li>
+				<li><a href="/portforlios-marketing.php">Portfolios &amp; Marketing</a></li>
+				<li><a href="/internships.php">Internships</a></li>
+				<li><a href="/contact.php">Contact</a></li>
 			</ul>
-			<ul class="sub">
-				<li><a href="/cities-we-serve/index.html">Cities We Serce</a></li>
-				<li><a href="/articles/index.html">Articles</a></li>
-				<li><a href="/other-sites/index.html">Other Sites</a></li>
-				<li><a href="/privacy/index.html">Privacy Policy</a></li>
-				<li><a href="/terms/index.html">Terms &amp; Conditions</a></li>
+			<ul class="subNav">
+				<li><a href="/cities-we-serve.php">Cities We Serve</a></li>
+				<li><a href="/articles.php">Articles</a></li>
+				<li><a href="/other-sites.php">Other Sites</a></li>
+				<li><a href="/privacy.php">Privacy Policy</a></li>
+				<li><a href="/terms.php">Terms &amp; Conditions</a></li>
 			</ul>
 			<ul class="social">
-				<li><a href=""><img src="images/footer/bbb.png" alt=""></a></li>
-				<li><a href=""><img src="images/footer/visa.png" alt=""></a></li>
-				<li><a href=""><img src="images/footer/mastercard.png" alt=""></a></li>
-				<li><a href=""><img src="images/footer/amexpress.png" alt=""></a></li>
-				<li><a href=""><img src="images/footer/dci.png" alt=""></a></li>
-				<li><a href=""><img src="images/footer/blog.png" alt=""></a></li>
-				<li><a href=""><img src="images/footer/twitter.png" alt=""></a></li>
-				<li><a href=""><img src="images/footer/facebook.png" alt=""></a></li>
-				<li><a href=""><img src="images/footer/google-plus.png" alt=""></a></li>
-				<li><a href=""><img src="images/footer/its-logo-footer.png" alt=""></a></li>
-				<li><a href=""><img src="images/footer/youtube.png" alt=""></a></li>
+				<li><a href=""><img src="images/footer/bbb.png" alt="" /></a></li>
+				<li><a href=""><img src="images/footer/visa.png" alt="" /></a></li>
+				<li><a href=""><img src="images/footer/mastercard.png" alt="" /></a></li>
+				<li><a href=""><img src="images/footer/amexpress.png" alt="" /></a></li>
+				<li><a href=""><img src="images/footer/dci.png" alt="" /></a></li>
+				<li><a href=""><img src="images/footer/blog.png" alt="" /></a></li>
+				<li><a href=""><img src="images/footer/twitter.png" alt="" /></a></li>
+				<li><a href=""><img src="images/footer/facebook.png" alt="" /></a></li>
+				<li><a href=""><img src="images/footer/google-plus.png" alt="" /></a></li>
+				<li><a href=""><img src="images/footer/its-logo-footer.png" alt="" /></a></li>
+				<li><a href=""><img src="images/footer/youtube.png" alt="" /></a></li>
 			</ul>
 		</nav>
 		<p class="copyright">&copy; Empire West Studios</p>
@@ -87,7 +106,7 @@
 	<script>window.jQuery || document.write('<script src="j/vendor/jquery.js"><\/script>')</script>
 
 	<!-- scripts concatenated and minified via build script -->
-	<%- @getBlock('scripts').add(['/vendor/log.js', '/vendor/modernizr.js', "/script.js"]).toHTML() %>
+	<%- @getBlock('scripts').add(['/vendor/log.js', '/vendor/modernizr.js', '/script.js']).toHTML() %>
 	<!-- end scripts -->
 
 	<!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
