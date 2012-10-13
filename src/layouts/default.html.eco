@@ -28,40 +28,12 @@
 	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans|Rokkitt' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<header>
 
-		<div class="logo">
-			<a href="http://www.empireweststudios.com">
-				<img src="/images/logo.png." alt="Empire West Studios">
-			</a>
-		</div>
+	<%= @partial('header.html.eco')%>
+	<%= @getHeaderNav() %>
 
-		<nav>
-
-			<ul class="mainNav">
-				<li>Photography</li>
-				<li><a href="model-and-talent.php">Model&amp;Talent</a></li>
-				<li><a href="fashion-and-beauty.php">Fashion&amp;Beauty</a></li>
-				<li><a href="/face-and-body-art.php">Face&amp;Body Art</a></li>
-				<li><a href="/headshots.php">Headshots</a></li>
-			</ul>
-
-			<ul class="subNav">
-				<li><a href="/great-photos-success.php">Great Photos = Success</a></li>
-				<li><a href="/nobody-does-it-better.php">Nobody Does It Better</a></li>
-				<li><a href="/montage.php">Montage</a></li>
-				<li><a href="/film-strips.php">Film Strips</a></li>
-				<li><a href="/twin-sets.php">Twin Sets</a></li>
-				<li><a href="/children.php">Children 5-12</a></li>
-				<li><a href="/teens.php">Teens</a></li>
-				<li><a href="/adults.php">Adults 20+</a></li>
-			</ul>
-
-		</nav>
-
-	</header>
 	<div id="container">
-		<%= @content %>
+		<%- @content %>
 	</div>
 	<footer>
 		<nav>

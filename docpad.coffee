@@ -33,6 +33,14 @@ docpadConfig = {
 				place, your, website, keywoards, here, keep, them, related, to, the, content, of, your, website
 				"""
 
+		nav:
+
+			header: [
+				{ title: 'Title 1', url: 'Url 1'},
+				{ title: 'Title 2', url: 'Url 2'},
+				{ title: 'Title 3', url: 'Url 3'},
+				{ title: 'Title 4', url: 'Url 4'}
+			]
 
 		# -----------------------------
 		# Helper Functions
@@ -57,6 +65,11 @@ docpadConfig = {
 		getPreparedKeywords: ->
 			# Merge the document keywords with the site keywords
 			@site.keywords.concat(@document.keywords or []).join(', ')
+
+		getHeaderNav: ->
+			items = []
+			for i in @nav.header
+				items.push i
 
 
 	# =================================
